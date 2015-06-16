@@ -18,7 +18,7 @@
             </div>
             <div class="repository-body">
                 {% if repository.description %}
-                <p>{{ repository.description }}</p>
+                    <p>{{ repository.description | nl2br }}</p>
                 {% else %}
                 <p>There is no repository description file. Please, create one to remove this message.</p>
                 {% endif %}
